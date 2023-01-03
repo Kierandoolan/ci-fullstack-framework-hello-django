@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-vs#a%xs0xa+%-*cyrn90j-z=w%7#0*!4+x#)dl)6y^snc$8bbm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [https://doolan-django.herokuapp.com]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -81,18 +81,16 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#DATABASES = {
+# DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
-#}
+# }
 
 DATABASES = {
    'default': dj_database_url.parse('postgres://bhbohklr:sYx7FSpCdWiDlTaV34SZwLmzQQpmqiry@mel.db.elephantsql.com/bhbohklr')
 }
-
-
 
 
 # Password validation
